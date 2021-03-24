@@ -1,0 +1,89 @@
+ixd_web2feather<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AIOtesting Feather2Web</title>
+    <meta name="Author" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.js"></script>
+<script src="sketch.js"></script>
+</head>
+
+<body>
+
+  <style>
+#canvasArea {
+  width: 400px;
+  height: 400px;
+}
+
+  </style>
+  <div id="canvasArea">
+
+  </div>
+
+  <div id="container">
+
+  </div>
+
+
+<script>
+
+// Start code from https://www.codegrepper.com/code-examples/javascript/javascript+event+listener+for+variable+change
+var obj = {
+  value: '',
+  letMeKnow() {
+
+    if(wData === 1) {
+  console.log(`The web button has changed to ${this.testVar}`);
+      document.getElementById('container').innerHTML += '<br>Website Button was Pressed!';
+    }
+  },
+  get testVar() {
+    // return wData;
+    return this.value
+  },
+  set testVar(value) {
+    this.value = value;
+    this.letMeKnow();
+  }
+}
+
+var obj2 = {
+  value: '',
+  letMeKnow() {
+
+    if(buttonChange != 1) {
+  console.log(`The physical button has changed to ${this.testVar}`);
+      document.getElementById('container').innerHTML += '<br>Physical Button was Pressed!';
+    }
+  },
+  get testVar() {
+    // return wData;
+    return this.value
+  },
+  set testVar(value) {
+    this.value = value;
+    this.letMeKnow();
+  }
+}
+
+//
+// console.log(obj.testVar)
+
+// obj.testVar = 5;
+// console.log(obj.testVar)
+//
+// obj.testVar = 15;
+// console.log(obj.testVar)
+
+// End code from https://www.codegrepper.com/code-examples/javascript/javascript+event+listener+for+variable+change
+</script>
+
+
+</body>
+
+</html>
